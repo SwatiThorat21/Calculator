@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .calculator{
+  	display: grid;
+    justify-content: center;
+    align-content: center;   
+    min-height: 100vh;
+    min-width: 100vw;
+    
+  }
+  
+  #numfield{
+  	padding: 0.5rem 0.3rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    background-color: #faedcd;
+    border-radius:5px;
+    text-align: right;
+}
+  
+
+  .calculator button:hover {
+  	background-color: rgba(255, 255, 255, .9);
+    opacity: 0.9;
+    transition:0.3s;
+}
+  
+  .btn-container{
+  	display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 1rem;
+  }
+  
+  .btn-container button {
+    border-radius: 0.5rem;
+    transition: all linear 0.2s;
+    background-color:black;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  .btn-container button:nth-child(2n) {
+  	background-color: #FFC53A;
+    color: black;
+  }
+  
+  .btn-container button:nth-child(2n+1) {
+  	background-color: #E06D06;
+  }
+
+  
