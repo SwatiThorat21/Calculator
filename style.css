@@ -28,7 +28,7 @@ body,
     
   }
   
-  #numfield{
+  #calculator_display{
   	padding: 0.5rem 0.3rem;
     width: 100%;
     margin-bottom: .5rem;
@@ -44,7 +44,7 @@ body,
     transition:0.3s;
 }
   
-  .btn-container{
+  .calculator_keys{
   	display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
@@ -52,7 +52,7 @@ body,
     border-radius: 1rem;
   }
   
-  .btn-container button {
+  .calculator_keys button {
     border-radius: 0.5rem;
     transition: all linear 0.2s;
     background-color:black;
@@ -65,12 +65,12 @@ body,
     border-radius: 4px;
   }
   
-  .btn-container button:nth-child(2n) {
+  .calculator_keys button:nth-child(2n) {
   	background-color: #FFC53A;
     color: black;
   }
   
-  .btn-container button:nth-child(2n+1) {
+  .calculator_keys button:nth-child(2n+1) {
   	background-color: #E06D06;
   }
 
