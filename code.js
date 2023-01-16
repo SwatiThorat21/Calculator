@@ -15,8 +15,9 @@ const calculate = (n1, operator, n2) => {
 };
 
 let calculator = document.querySelector(".calculator");
-let keys = document.querySelector(".calculator_keys");
+let keys = calculator.querySelector(".calculator_keys");
 let display = document.querySelector("#calculator_display");
+
 
 keys.addEventListener("click", (e) => {
   if (e.target.matches("button")) {
@@ -48,10 +49,11 @@ keys.addEventListener("click", (e) => {
       calculator.dataset.previousKeyType = "operator";
       calculator.dataset.firstValue = displayedNum;
       calculator.dataset.operator = action;
+      
     }
 
     if (action === "clear") {
-      console.log("clear key");
+      display.textContent = '0';
     }
 
     if (action === "calculate") {

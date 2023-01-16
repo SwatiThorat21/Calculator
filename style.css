@@ -43,9 +43,8 @@ body,
     opacity: 0.9;
     transition:0.3s;
 }
-  
-  .calculator_keys{
-  	display: grid;
+.calculator_keys{
+  display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -66,12 +65,19 @@ body,
   }
   
   .calculator_keys button:nth-child(2n) {
-  	background-color: #FFC53A;
+    background-color: #FFC53A;
     color: black;
   }
   
   .calculator_keys button:nth-child(2n+1) {
   	background-color: #E06D06;
   }
+  
+.calculator .calculator_keys .is-depressed {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  
+  
+}
 
   
