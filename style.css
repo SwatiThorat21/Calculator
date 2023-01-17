@@ -29,12 +29,13 @@ body,
   }
   
   #calculator_display{
-  	padding: 0.5rem 0.3rem;
+  	padding: 0.58rem 0.8rem;
     width: 100%;
     margin-bottom: .5rem;
     background-color: #faedcd;
     border-radius:5px;
     text-align: right;
+    box-shadow: 0 0 6px 0 rgba(93, 92, 92, 0.5) inset;
 }
   
 
@@ -67,15 +68,17 @@ body,
   .calculator_keys button:nth-child(2n) {
     background-color: #FFC53A;
     color: black;
+    box-shadow: 0 0 6px 0 rgba(93, 92, 92, 0.5) inset;
   }
   
   .calculator_keys button:nth-child(2n+1) {
   	background-color: #E06D06;
+    box-shadow: 0 0 6px 0 rgba(93, 92, 92, 0.5) inset;
   }
   
 .calculator .calculator_keys .is-depressed {
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  background-color: #E06D06;
+  box-shadow: 0 0 6px 0 rgba(93, 92, 92, 0.5) inset;
   
   
 }
